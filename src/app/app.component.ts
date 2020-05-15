@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'my-first-app';
+ // title = 'my-first-app';
+  title:string; // dit zou typescript moeten zijn
 constructor() { }
 
 ngOnInit() {
-
+  this.title="Hello world using Data binding";
 }
 
 }
