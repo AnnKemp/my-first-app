@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: black;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+footer a {
+  display: flex;
+  align-items: center;
+}
+span{
+  font-size: 54px;
+  color:red;
+ }
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 575px) {
+}
