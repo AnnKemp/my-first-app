@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
  // title = 'my-first-app';
-  title:string; // dit zou typescript moeten zijn
+  title:string; // dit is typescript
 constructor() { }
 
 ngOnInit() {
