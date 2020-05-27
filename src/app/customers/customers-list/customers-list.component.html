@@ -12,7 +12,7 @@
   <tr *ngFor="let cust of filteredCustomers">
     <td>
       <a>
-        {{ cust.name }}
+        {{ cust.name | titlecase }} <!-- you can find the names of the pipes (in this case: titlecase - makes from the first letter of the name a capital, this is called a 'pipe') in the Angular documentation -->
       </a>
     </td>
     <td>{{ cust.city }}</td>
