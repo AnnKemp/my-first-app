@@ -18,13 +18,13 @@
     <td>{{ cust.city }}</td>
     <td>{{ cust.orderTotal }}</td>
   </tr>
-  <tr>
+  <tr *ngIf="filteredCustomers && filteredCustomers.length">
     <td colspan="2">&nbsp;</td>
     <td>
       {{ customersOrderTotal }}
     </td>
   </tr>
-  <tr>
+  <tr *ngIf="!filteredCustomers || !filteredCustomers.length">
     <td colspan="4">No customers found</td>
   </tr>
 </table>
