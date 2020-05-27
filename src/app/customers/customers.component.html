@@ -1,3 +1,5 @@
-<h1>{{ title }}</h1>
+<h1 [hidden]="isVisible">{{ title }}</h1> <!-- het gebruik van de dubbele gekrulde haakjes wordt 'interpolation' genoemd, als je de waarde bij hidden 'false' maakt dus !isVisible dan verdwijnt de titel, dit is gebonden aan code bij customers.component.ts -> isVisible: true; -->
+<!-- het bovenstaande zou ook zo: <h1 [innerHTML]="title"></h1> geschreven kunnen worden -->
 <br />
+<!-- dit voorbeeld geeft foutmeldingen: <button (click)="changeVisibility()">show/hide</button> als het werkt zou het de titel 'toggle click' tonen of verbergen -->
 <app-customers-list></app-customers-list>
