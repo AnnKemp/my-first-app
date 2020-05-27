@@ -2,4 +2,8 @@
 <!-- het bovenstaande zou ook zo: <h1 [innerHTML]="title"></h1> geschreven kunnen worden -->
 <br />
 <!-- dit voorbeeld geeft foutmeldingen: <button (click)="changeVisibility()">show/hide</button> als het werkt zou het de titel 'toggle click' tonen of verbergen -->
-<app-customers-list></app-customers-list>
+
+<!-- So [customers] verwijst naar de set en get customers op de pagina: customers-list.component.ts en ='people' verwijst naar ngOnInit(){
+      this.title="Customers";
+      this.people =[....] op de pagina: customers.component.ts }-->
+<app-customers-list [customers]="people"></app-customers-list>

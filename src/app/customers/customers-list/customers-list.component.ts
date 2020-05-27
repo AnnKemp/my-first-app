@@ -6,7 +6,18 @@ import {ICustomer} from "../../shared/interfaces";
   templateUrl: './customers-list.component.html'
 })
 export class CustomersListComponent implements OnInit{
-  @Input() customers: any[]; // is ook nen decorator én een input property
+  private _customers: ICustomer[] = [];
+  @Input() get customers(): ICustomer[] {
+    return this._customers;
+  }
+
+  set customers(value: ICustomer[]) {
+    if (value) {
+      this.filteredCustomers = this._customers = value;
+      this.calculateOrders();
+    }
+  }
+  //@Input() customers: any[]; // is ook nen decorator én een input property
   filteredCustomers: ICustomer[]=[];
   customersOrderTotal: number;
   currency:string='USD';
