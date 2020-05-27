@@ -12,7 +12,7 @@ export class CustomersListComponent implements OnInit{
 
   constructor(){}
 
-  ngOnInit() {
+  ngOnInit() { // deze filteredCustomers zijn tijdelijk verplaatst om de databinding in de html te kunnen testen
     this.filteredCustomers = [
       { id: 1, name: 'john Doe', city: 'Phoenix', orderTotal: 9.99, customerSince: new Date(2014, 7, 10) },
       { id: 2, name: 'Jane Doe', city: 'Chandler', orderTotal: 19.99, customerSince: new Date(2017, 2, 22)},
