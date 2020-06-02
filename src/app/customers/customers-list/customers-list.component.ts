@@ -20,7 +20,7 @@ export class CustomersListComponent implements OnInit{
   //@Input() customers: any[]; // is ook nen decorator én een input property
   filteredCustomers: ICustomer[]=[];
   customersOrderTotal: number;
-  currency:string='USD';
+  currencyCode:string='USD';
 
   constructor(){}
 
