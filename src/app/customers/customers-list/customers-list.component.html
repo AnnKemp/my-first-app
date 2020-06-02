@@ -1,4 +1,5 @@
-<filter-textbox></filter-textbox>
+<filter-textbox (changed)="filter($event)"></filter-textbox>
+<!-- the filter function from customers-list.components.ts is called and the event (type in the input) is given as a value ($event) passed to the function -->
 <br />
 <br />
 <table class="table table-hover">

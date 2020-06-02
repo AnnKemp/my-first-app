@@ -27,6 +27,18 @@ export class CustomersListComponent implements OnInit{
     ngOnInit() {
 
     }
+  filter(data: string) {
+    if (data) {
+      this.filteredCustomers = this.customers.filter((cust: ICustomer) => {
+        return cust.name.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+          cust.city.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+          cust.orderTotal.toString().indexOf(data) > -1;
+      });
+    } else {
+      this.filteredCustomers = this.customers; // to show the default list without searching
+    }
+    this.calculateOrders();  // to show the total of the shown customers-> pricetotal
+  }
   /*ngOnChanges(changes: SimpleChanges // you import SimpleChanges on top) {
     // is possible to use it in combination with the @Input property to listen to the input to detect any changes and then react on that but if you have only one property to watch on change then there is a better technique ->
   }*/
