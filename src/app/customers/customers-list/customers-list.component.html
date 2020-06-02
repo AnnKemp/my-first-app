@@ -16,12 +16,13 @@
       </a>
     </td>
     <td>{{ cust.city }}</td>
-    <td>{{ cust.orderTotal }}</td>
+    <!-- met de pipe currency kan je de default browser currency tonen, in dit geval echter wijzen we een soort vervang functie (het is eigenlijk een propertie die we kunnen binden) toe currencyCode om het dynamisch te maken naargelang wat de gebruiker selecteert en  : symbol duidt aan dat het symbool getoont moet worden 'code' kan ook dan toon je de afkorting van de munt-naam -->
+    <td>{{ cust.orderTotal | currency:currencyCode:'symbol' }}</td>
   </tr>
   <tr *ngIf="filteredCustomers && filteredCustomers.length">
     <td colspan="2">&nbsp;</td>
     <td>
-      {{ customersOrderTotal }}
+      {{ customersOrderTotal | currency:currencyCode:'symbol' }}
     </td>
   </tr>
   <tr *ngIf="!filteredCustomers || !filteredCustomers.length">

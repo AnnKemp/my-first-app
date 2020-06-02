@@ -4,8 +4,9 @@ import { Pipe, PipeTransform } from '@angular/core'; //You import Pipe, a decora
 export class CapitalizePipe implements PipeTransform {
   transform(value: any) { // the transform function belongs to the imported Pipe
     if (value) {
-      return value.charAt(0).toUpperCase() + value.slice(1); // here we make a custom pip with the uppercasing from the first letter and concatenating the rest
+      return value.charAt(0).toUpperCase() + value.slice(1); // here we make a custom pipe with the uppercasing from the first letter and concatenating the rest
     }
     return value;
   }
 }
+// this page makes a 'custom pipe' and you add it to you app by in the shared module you input capitalized pipe

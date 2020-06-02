@@ -23,11 +23,11 @@ export class AppModule { }
 /*
 Sideline notatie:
 Dit is een van de build-in directives van Angular, je hebt er zo een aantal:
-ngFor (voor een for-lus te maken), ngIf (voor een voorwaarde te stellen):
+ngFor (voor een for-lus te maken), ngIf (om een voorwaarde te stellen):
 <div *ngIf="customer">{{ customer.details }}</div> // ngIf stelt conditie
 <div *ngFor="let customer of customers"></div>
 
-ngClass (voor een classe te veranderen), ngStyle en ngModel:
+ngClass (om een classe te veranderen), ngStyle en ngModel:
 <span [ngClass]="{active: isActive, icon: showIcon }">{{ customer.firstname }}</span>
  <input type="text" [(ngModel)]="customer.name" />
 // dus de vierkante haakjes wijzen op een eigenschap en wijzen de waarde van de input toe aan de input (value) maar de ronde haakjes wijzen dan op een event-functie en zorgen ervoor dat de data die ingetypt wordt onmiddellijk getoont wordt en blijft staan in de input
