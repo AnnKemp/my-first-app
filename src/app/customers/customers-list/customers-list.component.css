@@ -1,7 +1,7 @@
 *{
   font-family: sans-serif;
 }
-filter-textbox{
+filter-textbox, h1{
   margin-left: 15px;
 }
 table{
