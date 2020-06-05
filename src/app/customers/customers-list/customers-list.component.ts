@@ -3,7 +3,8 @@ import {ICustomer} from "../../shared/interfaces";
 
 @Component({ // decorators are always functions!
   selector: 'app-customers-list',
-  templateUrl: './customers-list.component.html'
+  templateUrl: './customers-list.component.html',
+  styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit{
   private _customers: ICustomer[] = [];
