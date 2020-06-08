@@ -1,4 +1,5 @@
 # MyFirstApp
+To see the app click on the following link:  https://annkemp.github.io/my-first-app/.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
