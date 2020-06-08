@@ -1,33 +1,58 @@
 *{
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-filter-textbox, h1{
-  margin-left: 15px;
+filter-textbox{
+  margin-left: 10%;
+}
+filter-textbox input[type=text]{
+  background-color: white;
+  /*background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;*/
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
+  height: 30px;/* hoogte, breedte . . . dat doet ie allemaal niet . . .pfff, weinig of bijna geen controle over die filter-textbox via css, spijtig! */
+  width: 700px;
+}
+filter-textbox input[type=text]:focus{
+  width: 200%;
 }
 table{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 1px 1px 4px #aaa;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.table thead{
-  background-color: cadetblue;
-  color:white;
-  font-family: sans-serif;
-  font-weight: bold;
-  width: 100%;
-  min-height:50px;
-  padding:5px;
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-th{
-  border:none;
-  margin:0;
-}
-td{
-  width:200px;
-  padding:10px;
-  border-right: #aaaaaa 1px solid;
-  margin:0;
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
 .ordertotal{
   border-top: 1px solid black;
+  background-color: darkgreen;
+  color:white;
+  font-weight: bold;
+}
+p{
+  margin-left: 10%;
+  margin-top: 20px;
 }
